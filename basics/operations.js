@@ -27,6 +27,16 @@ num **= 2 // 36
 // console.log(num %= 2);
 num %= 2 // 0
 
+// Types of comparison operators in javascript
+console.log(2 == 2); // Equal to, lose
+console.log(2 === 2); // Equal to, Strict
+console.log(2 != 2); // Not Equal to
+console.log(2 !== 2); // Not Equal to, Strict
+console.log(3 > 2); // Greater then
+console.log(2 < 3); // Less then
+console.log(2 >= 2); // Greater then equal to
+console.log(2 <= 2); // less then equal to
+
 // example of Unary Operations
 let NavNumValue = -num
 // console.log(NavNumValue);
