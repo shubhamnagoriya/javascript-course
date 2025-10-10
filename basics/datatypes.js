@@ -10,11 +10,16 @@
 
 
 // datatypes in Javascript
+// 1. Primitive Datatypes
+// 2. Non-primitive Datatypes or referance type
+
+// 1. Primitive Datatypes
+// String, Number, BigInt, Boolean, Null, Undefined, Symbole
 
 // String: store text data
 console.log("This is a string value");
 
-// Integer: store number 
+// Number: store number 
 console.log(43453234);
 
 // boolean: store true/fales about the case or situation
@@ -23,12 +28,30 @@ console.log(userActive);
 
 // Null: empty space or containing nothing
 console.log(null);
+// Note: "null" datatype is object
 
 // undefined: value is not defined yet
 console.log(undefined);
 
 // symbols: uses symbols
 
-// Note: "null" datatype is object
+// 2. Non-primitive Datatypes or referance type
+// Array, Function, Object
 
-// object: 
+// Array: store multiple values
+let userNames = ['Ironman', 'Batman', 'Superman', 'Spiderman'];
+
+// Object: Store values with respective keys
+let userData = {
+    name: 'Shubham',
+    age: 24,
+    email: 'shubham@gmail.com',
+
+}
+
+// Function: Store single or multiple process
+let oneFunction = function(){
+    console.log("Hello World");   
+}
+
+oneFunction();
