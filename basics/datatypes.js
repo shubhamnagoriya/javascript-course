@@ -16,22 +16,39 @@
 // 1. Primitive Datatypes
 // String, Number, BigInt, Boolean, Null, Undefined, Symbole
 
+/*
+Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+*/
+
 // String: store text data
-console.log("This is a string value");
+// console.log("This is a string value");
 
 // Number: store number 
-console.log(43453234);
+// console.log(43453234);
 
 // boolean: store true/fales about the case or situation
 let userActive = true
-console.log(userActive);
+// console.log(userActive);
 
 // Null: empty space or containing nothing
-console.log(null);
+// console.log(null);
 // Note: "null" datatype is object
 
 // undefined: value is not defined yet
-console.log(undefined);
+// console.log(undefined);
 
 // symbols: uses symbols
 
@@ -54,4 +71,31 @@ let oneFunction = function(){
     console.log("Hello World");   
 }
 
-oneFunction();
+// oneFunction();
+
+
+//----------------------------------------------------------------------------------------------------
+
+// Stack and Heap Memory
+
+// Stack memory: used for primitive values and it's stores copy
+let someCity = "Indore"
+let anotherCity = someCity
+anotherCity = "Ujjain"
+
+console.log(someCity);
+console.log(anotherCity);
+
+
+// Heap memory: used for non-primitive values and it's stores original referances
+let userOne = {
+    name: "Shubham",
+    email: "shubham@google.com"
+}
+
+let userTwo = userOne
+
+userTwo.email = "shubham@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
